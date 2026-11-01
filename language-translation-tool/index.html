@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingua - Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>lingua<span>.</span></h1>
+            <p>A simple space to translate your thoughts.</p>
+        </header>
+
+        <!-- Translation Panels -->
+        <div class="translator">
+
+            <!-- Input Panel -->
+            <div class="panel">
+
+                <div class="panel-header">
+                    <label for="sourceLang">TRANSLATE FROM</label>
+                    <select id="sourceLang">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+
+               <textarea
+    id="inputText"
+    placeholder="Enter your text here..."
+    maxlength="500"
+></textarea>
+                <div class="panel-footer">
+    <span>Original text</span>
+
+    <div class="footer-actions">
+        <span id="charCount">0 characters</span>
+        <button type="button" id="clearBtn" class="copy-btn">
+            Clear
+        </button>
+    </div>
+</div>
+            </div>
+
+            <!-- Output Panel -->
+            <div class="panel">
+
+                <div class="panel-header">
+                    <label for="targetLang">TRANSLATE TO</label>
+                    <select id="targetLang">
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+
+                <textarea
+                    id="outputText"
+                    placeholder="Your translation will appear here..."
+                    readonly
+                ></textarea>
+
+                <div class="panel-footer">
+                    <span>Translation</span>
+                    <button type="button" id="copyBtn" class="copy-btn">
+                        Copy ↗
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+
+            <button type="button" id="swapBtn" class="swap-btn">
+                ⇄ Swap languages
+            </button>
+
+            <button type="button" id="translateBtn" class="translate-btn">
+                Translate →
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <span>Powered by MyMemory</span>
+            <span>Made with care.</span>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
